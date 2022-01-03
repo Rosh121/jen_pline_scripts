@@ -7,7 +7,7 @@ node {
   stage('Clone') {
       // Clones the repository from the current branch name
       echo 'Make the output directory'
-      mkdir build
+      bat(/mkdir "build"/)
 
       echo 'Cloning files from (branch: "' + branchName + '" )'
       dir('build') {
