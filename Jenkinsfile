@@ -6,10 +6,10 @@ node {
   stage('Clone') {
       // Clones the repository from the current branch name
       echo 'Make the output directory every time'
-      bat(/mkdir "build1"/)
+      bat(/mkdir "build2"/)
 
       echo 'Cloning files from (branch: "' + branchName + '" )'
-      dir('build') {
+      dir('build2') {
           git branch: branchName, url: repoUrl
       }
   }
