@@ -1,5 +1,4 @@
-String branchName = env.BRANCH_NAME
-String gitCredentials = "CREDENTIAL_ID"
+String branchName = "main"
 String repoUrl = "https://github.com/Rosh121/java_cases.git"
 
 node {
@@ -11,7 +10,7 @@ node {
 
       echo 'Cloning files from (branch: "' + branchName + '" )'
       dir('build') {
-          git branch: branchName, credentialsId: 	gitCredentials, url: repoUrl
+          git branch: branchName, url: repoUrl
       }
   }
 }
