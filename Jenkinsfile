@@ -8,7 +8,7 @@ node {
       echo 'Clean the output directory if exists'
       bat(/cd "C:\ProgramData\Jenkins\.jenkins\workspace\gs-maven"
           if test -d "build";
-          then rmdir /s /q "build";
+          then rmdir \/s \/q "build";
           else mkdir "build";
           fi/)
 
