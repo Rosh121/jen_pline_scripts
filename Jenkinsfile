@@ -9,7 +9,7 @@ node {
       bat(/cd "C:\ProgramData\Jenkins\.jenkins\workspace\gs-maven"
           if exist "build\" rmdir \/s \/q "build"
           mkdir "build"
-          fi/)
+          echo 'cleaning done'/)
 
       echo 'Cloning files from (branch: "' + branchName + '" )'
       dir('build') {
