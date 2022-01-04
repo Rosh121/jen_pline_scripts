@@ -3,7 +3,7 @@ String repoUrl = "https://github.com/Rosh121/java_cases.git"
 
 node {
   // Start Stages
-  stage('Clone') {
+  stage('Clean and Clone') {
       // Clones the repository from the current branch name
       echo 'Clean the output directory if exists'
       bat(/cd "C:\ProgramData\Jenkins\.jenkins\workspace\gs-maven"
